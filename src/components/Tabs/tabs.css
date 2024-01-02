@@ -1,0 +1,54 @@
+/* Tabs container styling */
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top:20px;
+  }
+  
+  /* Individual tab styling */
+  .tab-list li {
+    margin-right: 10px;
+  }
+  
+  /* Tab link styling */
+  .tab-list a {
+    text-decoration: none;
+    padding: 4px 4px 4px 3em;
+    display: flex;
+    align-items: center;
+    border: 1px solid #26ab03;
+    /* border-bottom: none; */
+    border-radius: 5px ;
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s;
+  }
+  
+  /* Active tab styling */
+  .tab-list li.active a {
+    background-color: #26ab03;
+    font-weight: bold;
+    color: white;
+
+  }
+  
+  /* Content styling */
+  .tab-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 0 5px 5px 5px;
+    background-color: #fff;
+    margin-top:5px;
+    border-top-color: #26ab03;
+  }
+  
+  /* Hover effect for tabs */
+  .tab-list a:hover {
+    background-color: #26ab03;
+    color: white;
+  }
+  .tab-label {
+    margin-right:5px
+  }

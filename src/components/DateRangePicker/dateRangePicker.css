@@ -1,0 +1,84 @@
+.wrapper-date-range {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.title {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.date-picker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 3px;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid black;
+}
+
+/* Style the individual date pickers */
+.react-datepicker-wrapper {
+  position: relative;
+  /* For positioning the calendar icon */
+}
+
+.react-datepicker__input-container input {
+  width: 80px;
+  padding: 8px 8px 8px 10px;
+  /* Padding for text and icon inside the input */
+  /* border: 1px solid #CCCCCC; */
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Style for the calendar icon inside the input */
+.react-datepicker__input-container::before {
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #555555;
+  pointer-events: none;
+}
+
+/* Style for the date picker pop-up */
+.react-datepicker-popper {
+  z-index: 50;
+  /* Ensure it's above other content */
+}
+
+/* Adjust styles for the date picker when it's open */
+.react-datepicker-wrapper .react-datepicker__input-container input {
+  padding: 0 10px;
+  border: transparent;
+  outline: transparent;
+}
+
+/* If you need to style the date range between the selected start and end dates */
+.react-datepicker__day--in-range,
+.react-datepicker__day--selected {
+  background-color: #0078d4;
+  color: #ffffff;
+}
+
+/* Modify styles for the days that are hovered */
+.react-datepicker__day--hovered {
+  background-color: #e2e2e2;
+}
+
+/* Additional styling for the clear button, selected day, etc., can be added here */
+.divider-picker {
+  width: 100%;
+  width: 2px;
+  height: 14px;
+  background-color: #d8d8d8;
+  /* margin: 10px 20px; */
+  color: red;
+}
